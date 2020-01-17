@@ -79,7 +79,7 @@ export class ShareButton {
     return `sb-button sb-${this.theme}`;
   }
 
-  @ViewChild(ShareDirective) ref: ShareDirective;
+  @ViewChild(ShareDirective, { static: true }) ref: ShareDirective;
 
   constructor(private _share: ShareService) {
   }
