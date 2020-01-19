@@ -2,7 +2,7 @@
 
 <mat-sidenav-container>
 
-  <mat-sidenav opened="false">
+  <mat-sidenav>
     <nav-menu></nav-menu>
   </mat-sidenav>
 
@@ -15,7 +15,7 @@
     </main>
   </div>
 
-  <button fxHide fxShow.lt-md="true" mat-fab class="menu-fab" [disabled]="sideNav.opened" (click)="sideNav.toggle()">
+  <button fxHide fxShow.lt-md="true" mat-fab class="menu-fab" (click)="sideNav.toggle()">
     <mat-icon>menu</mat-icon>
   </button>
 

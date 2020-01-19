@@ -1,5 +1,4 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { HttpClientJsonpModule, HttpClientModule } from '@angular/common/http';
 import { NgProgressModule } from '@ngx-progressbar/core';
@@ -32,13 +31,10 @@ export function hljsLanguages() {
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule,
     AppRoutingModule,
     HttpClientModule,
     HttpClientJsonpModule,
-    HighlightModule.forRoot({
-      languages: hljsLanguages
-    }),
+    HighlightModule,
     NgProgressModule,
     NgProgressHttpModule,
     NgProgressRouterModule,
